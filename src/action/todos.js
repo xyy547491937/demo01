@@ -1,12 +1,10 @@
 
 
 import { ADD_TODO } from './types.js';
-export default function getList() {
+export const getList=()=>{
     console.log('postAction')
-    store.dispatch({
+    return ({
       type: ADD_TODO,
       text: 'Read the docs'
     })
 }
-
-getList()
